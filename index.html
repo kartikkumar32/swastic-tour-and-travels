@@ -1,51 +1,233 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="KKK.css">
-<title>TOUR AND Travels</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login, Sign Up & Forgot Password</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+            background-image: url("2.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            align-items: center;
+            text-align: center;
+        }
+        header {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            margin-top: 160px; /* Ensures it stays below the header */
+        }
+        .container h2 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .input-group {
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        .link {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        .link a {
+            color: #2563EB;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #2563EB;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #1E40AF;
+        }
+        footer {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        .footer-left {
+            text-align: left;
+        }
+        .footer-right {
+            display: flex;
+            gap: 10px;
+        }
+        .email-button {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .email-button:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+		header {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 30px;
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+    </style>
 </head>
-<body><center>
-<header><h1><B>SWASTIK TOUR AND TRAVELS</B></h1><img src="swastic.png" width="500px"></img></header>
-<br>
-<hr><marquee id="abc" onmouseover="document.getElementById('abc').stop();"
-onmouseout="document.getElementById('abc').start();">
-<h4 color="black" font="15px">
-For any query contact to our Toll Free Number 1800-154-1230</h4></marquee><hr>
-<br><br>
-<nav class="navbar">
-<ul>
-<li><a href="HOME PAGE.html">Home</a></li>
-<li><a href="#">About Us</a></li>
-<li><a href="homeeeee.html">Holiday tours</a></li>
-<li><a href="#">Adventures</a></li>
-<li><a href="#">Hotels</a></li>
-<li><a href="BOOK NOW.html">Book now</a></li>
-<li><a href="#">Policy</a></li>
-<li><a href="contact.html">Contact Us</a></li>
-</ul>
-</nav>
-<br><br><br><br>
-<img src="1120.jpg" height="250px" width="400px"></img><img src="package.jpeg" height="250px" width="400px"></img>
-<img src="office.jpeg" height="250px" width="400px"></img>
+<body>
+    <header>
+        Swastik Tour and Travels
+    </header>
 
-<h2>About Swastik Tours "N" Travels</h2><br><br>
-<h3>
-<center>Swastik Tour and Travels Shimla is a one of the leading Company in Himachal Pradesh,India, having 
-office in Shimla. Our accountability and transparency is greatly appreciated and valued beyond 
-comparison by all those who had at least once experienced our hospitality and cordiality.Our main
-motto is to introduce you with the natural beauty of Himachal Pradesh. Highest in satisfaction,
-discover one of the many diverse regions.
-Swastik tour N Travels is an inbound Destination Management Company combining comfort and 
-genuineness in Himachals greatest destinations. Being a Travel company Shimla Swastik tour 
-and travels have great reputation in travel industry with huge number of satisfied clients and 
-Travels Partners.Swastik tour and Travels is a unique blend of smooth, prompt and personalized 
-service, devoted to customer concern and satisfaction.We would like if Travel agent any parts of 
-India or neighbour country send us your requirements to start the business relations. Our rates 
-will be very competitive at the best.Our friendly staff are ever ready to assist you throughout 
-your query.For an intimate and exceptional travelling experience, we organize a variety of Tour 
-Packages. Tourist can enjoy the ultimate lush green landscapes and winding valleys of Himalaya 
-during the trip.We take pride in offering the best services for our guests.We always want you to
-have the best travelling experience at the best prices.</center></h3>
-<br><br><footer><marquee><h3>swastic.travelspvt.ltd</h3></marquee></footer>
+    <div class="container" id="login-box">
+        <h2>Login</h2>
+        <form onsubmit="login(event)">
+            <div class="input-group">
+                <label for="email or Phone Number">Email or Phone Number</label>
+                <input type="email" id="email" placeholder="Enter your email or RMN" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="link">
+                <a href="#" onclick="showForgotPassword()">Forgot Password?</a>
+            </div>
+            <button type="button" class="btn" onclick="location.href='HOME PAGE.html'">Login</button>
+        </form>
+        <div class="link">
+            Don't have an account? <a href="#" onclick="showSignUp()">Sign Up</a>
+        </div>
+    </div>
+    
+    <div class="container" id="signup-box" style="display: none;">
+        <h2>Sign Up</h2>
+        <form onsubmit="signUp(event)">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="input-group">
+                <label for="email-signup">Email</label>
+                <input type="email" id="email-signup" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password-signup">Password</label>
+                <input type="password" id="password-signup" placeholder="Create a password" required>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <div class="link">
+            Already have an account? <a href="#" onclick="showLogin()">Login</a>
+        </div>
+    </div>
+
+    <div class="container" id="forgot-password-box" style="display: none;">
+        <h2>Forgot Password</h2>
+        <form>
+            <div class="input-group">
+                <label for="email-forgot">Email</label>
+                <input type="email" id="email-forgot" placeholder="Enter your email" required>
+            </div>
+            <button type="submit" class="btn">Reset Password</button>
+        </form>
+        <div class="link">
+            Remember your password? <a href="#" onclick="showLogin()">Login</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Swastik Tour and Travels | All rights reserved</p>
+        <p>For any queries, call Toll-Free: 1800-154-1230</p>
+        <a href="mailto:ministerchief31@gmail.com" class="email-button">Email Us</a>
+        <a href="https://facebook.com" class="email-button">Facebook</a>
+        <a href="https://instagram.com" class="email-button">Instagram</a>
+        <a href="https://twitter.com" class="email-button">Twitter</a>
+    </footer>
+
+    <script>
+        function showSignUp() {
+            document.getElementById('login-box').style.display = 'none';
+            document.getElementById('signup-box').style.display = 'block';
+            document.getElementById('forgot-password-box').style.display = 'none';
+        }
+        function showLogin() {
+            document.getElementById('signup-box').style.display = 'none';
+            document.getElementById('forgot-password-box').style.display = 'none';
+            document.getElementById('login-box').style.display = 'block';
+        }
+        function showForgotPassword() {
+            document.getElementById('login-box').style.display = 'none';
+            document.getElementById('signup-box').style.display = 'none';
+            document.getElementById('forgot-password-box').style.display = 'block';
+        }
+        function login(event) {
+            event.preventDefault(); 
+            window.location.href = 'tour and travel.html'; 
+        }
+        function signUp(event) {
+            event.preventDefault(); 
+            alert('Account Created! Please Login.');
+            showLogin();
+        }
+    </script>
 </body>
 </html>
