@@ -12,7 +12,7 @@
             box-sizing: border-box;
         }
         body {
-            background:url("2.webp");
+            background:url("https://cdn.glitch.global/8a8acda0-ea16-4406-99c1-5337d582003c/2.webp?v=1740839329360");
             background-size: cover;
             padding: 2em;
             text-align: center;
@@ -47,17 +47,32 @@
             line-height: 1.8;
             margin-bottom: 15px;
         }
-        .footer {
-            background: rgba(0, 0, 0, 0.8);
+        footer {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
             color: white;
-            padding: 15px;
-            position: fixed;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             bottom: 0;
             left: 0;
-            width: 100%;
-            text-align: center;
             font-weight: bold;
         }
+				.email-button {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .email-button:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+      .h1{
+        color:white;
+      }
     </style>
 </head>
 <body>
@@ -81,6 +96,17 @@
         <h2>Contact Us</h2>
         <p>If you have any questions about our privacy policy, please email us at <a href="mailto:support@swastiktourtravels.com">support@swastiktourtravels.com</a></p>
     </div>
-    <footer class="footer">&copy; 2025 Swastic Tour and Travels | All Rights Reserved</footer>
+      <footer class="footer">
+        <div>
+            <p class="h1">&copy; 2025 Swastic Tour and Travels | All rights reserved</p>
+            <p class="h1">For any query, contact our Toll-Free Number: 1800-154-1230</p>
+        </div>
+        <div>
+            <a href="mailto:ministerchief31@gmail.com" class="email-button">Email Us</a>
+            <a href="https://facebook.com" class="email-button">Facebook</a>
+            <a href="https://instagram.com" class="email-button">Instagram</a>
+            <a href="https://twitter.com" class="email-button">Twitter</a>
+        </div>
+    </footer>
 </body>
 </html>
