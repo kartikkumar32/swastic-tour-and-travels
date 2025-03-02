@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Payment - Swastik Tour and Travels</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- FontAwesome -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-image: url("2.webp");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        /* Header */
+        .header {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        
+        /* Navigation Bar (Below Header) */
+        .navbar {
+            display: flex;
+            justify-content: flex-start;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            width: 100%;
+            position: fixed;
+            top: 80px; /* Positioned below the header */
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-right: 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        .navbar ul li a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Payment container */
+        .payment-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+            text-align: center;
+            width: 400px;
+            color: white;
+            margin-top: 140px; /* Adjusted to accommodate navbar */
+        }
+
+        h2 {
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row .input-group {
+            flex: 1;
+        }
+
+        .card-icons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .card-icons i {
+            color: rgba(255, 255, 255, 0.6);
+            transition: 0.3s;
+        }
+
+        .card-icons i.active {
+            color: white;
+            transform: scale(1.2);
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            background: linear-gradient(to right, #ff9800, #ffcc00);
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #e68900, #ffcc00);
+            transform: scale(1.05);
+        }
+
+        footer {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            font-weight: bold;
+        }
+				.email-button {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .email-button:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">SWASTIK TOUR AND TRAVELS</header>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="HOME PAGE.html">Home</a></li>
+            <li><a href="homeeeee.html">Holiday Tours</a></li>
+            <li><a href="trekking.html">Adventures</a></li>
+            <li><a href="BOOK NOW.html">Book Now</a></li>
+			<li><a href="hotels.html">Hotels</a></li>
+            <li><a href="#">Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+    <div class="payment-container">
+        <h2>Debit Card Payment</h2>
+        <form id="paymentForm">
+            <div class="input-group">
+                <label>Cardholder Name</label>
+                <input type="text" placeholder="Enter Name" required>
+            </div>
+            <div class="input-group">
+                <label>Debit Card Number</label>
+                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                <div class="card-icons">
+                    <i class="fab fa-cc-visa" id="visaIcon"></i>
+                    <i class="fab fa-cc-mastercard" id="mastercardIcon"></i>
+                    <i class="fas fa-credit-card" id="rupayIcon"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label>Expiry Date</label>
+                    <input type="text" placeholder="MM/YY" maxlength="5" required>
+                </div>
+                <div class="input-group">
+                    <label>CVV</label>
+                    <input type="text" placeholder="123" maxlength="3" required>
+                </div>
+            </div>
+            <button type="button" onclick="location.href='thank you.html'" action="required">Pay Now</button>
+        </form>
+    </div>
+
+    <script>
+        // Card number validation
+        document.getElementById("cardNumber").addEventListener("input", function (e) {
+            let value = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
+            value = value.replace(/(.{4})/g, "$1 ").trim(); // Add space every 4 digits
+            e.target.value = value;
+
+            // Detect card type
+            let visaIcon = document.getElementById("visaIcon");
+            let mastercardIcon = document.getElementById("mastercardIcon");
+            let rupayIcon = document.getElementById("rupayIcon");
+
+            visaIcon.classList.remove("active");
+            mastercardIcon.classList.remove("active");
+            rupayIcon.classList.remove("active");
+
+            if (/^4/.test(value)) {
+                visaIcon.classList.add("active");
+            } else if (/^5[1-5]/.test(value)) {
+                mastercardIcon.classList.add("active");
+            } else if (/^6[0-9]/.test(value)) {
+                rupayIcon.classList.add("active");
+            }
+        });
+
+        // Prevent form submission
+        document.getElementById("paymentForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Payment Successful! Thank you for booking with Swastik Tour and Travels.");
+        });
+    </script>
+
+    <footer class="footer">
+        <div>
+            <p>&copy; 2025 Swastic Tour and Travels | All rights reserved</p>
+            <p>For any query, contact our Toll-Free Number: 1800-154-1230</p>
+        </div>
+        <div>
+            <a href="mailto:ministerchief31@gmail.com" class="email-button">Email Us</a>
+            <a href="https://facebook.com" class="email-button">Facebook</a>
+            <a href="https://instagram.com" class="email-button">Instagram</a>
+            <a href="https://twitter.com" class="email-button">Twitter</a>
+        </div>
+    </footer>
+
+
+</body>
+</html>
