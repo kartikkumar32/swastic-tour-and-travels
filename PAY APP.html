@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            font-size: 18px;
+            background-image: url("2.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            text-align: left;
+            padding: 10px;
+        }
+        .navbar ul {
+            list-style-type: none;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-start;
+            border-radius: 10px;
+        }
+        .navbar li {
+            display: inline;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            background-color: #ff9800;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #000000;
+            font-size: 50px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .payment-method {
+            margin: 20px 0;
+        }
+        button {
+            background-color: #ff9800;
+            color: white;
+            font-size: 18px;
+            padding: 15px 60px;
+            border: none;
+            border-radius: 8px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #e68900;
+            transform: scale(1.05);
+        }
+        footer {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            bottom: 0;
+            left: 0;
+            font-weight: bold;
+            border-radius: 10px 10px 0 0;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background 0.3s;
+            margin: 5px;
+        }
+        .footer-links a:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+		h4{
+		color:#000000;
+		font-weight:bold;
+		}
+    </style>
+</head>
+<body>
+    <h1>Swastic Tour and Travels</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="HOME PAGE.html">Home</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="homeeeee.html">Holiday Tours</a></li>
+            <li><a href="trekking.html">Adventures</a></li>
+            <li><a href="BOOK NOW.html">Book Now</a></li>
+            <a href="hotels.html">About Us</a>
+            <li><a href="#">Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Select Payment Method</h1>
+        <hr>
+        <div class="payment-method">
+            <h4>Net Banking</h4>
+            <button onclick="location.href='online banking.html'">Pay Now</button>
+        </div>
+        <div class="payment-method">
+            <h4>Credit Card</h4>
+            <button onclick="location.href='card details.html'">Pay Now</button>
+        </div>
+        <div class="payment-method">
+            <h4>Debit Card</h4>
+            <button onclick="location.href='debitcard.html'">Pay Now</button>
+        </div>
+        <div class="payment-method">
+            <h4>UPI</h4>
+            <button onclick="location.href='UPI.html'">Pay Now</button>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>&copy; 2025 Swastic Tour and Travels | All rights reserved</p>
+            <p>For any query, contact our Toll-Free Number: 1800-154-1230</p>
+        </div>
+        <div class="footer-links">
+            <a href="mailto:ministerchief31@gmail.com">Email Us</a>
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://instagram.com">Instagram</a>
+            <a href="https://twitter.com">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>

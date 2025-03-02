@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Payment - Swastic Tour and Travels</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image:url("2.webp");
+            background-repeat:no-repeat;
+            background-size:cover;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            font-size: 40px;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-start;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: 0.3s;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .content {
+            flex: 1;
+        }
+        .qr-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            display: inline-block;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        }
+        .qr-container img {
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .qr-container img:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background: #ff9800;
+            color: white;
+            font-size: 18px;
+            padding: 12px 50px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 40px; /* Increased margin for better spacing */
+        }
+        button:hover {
+            background: #e68900;
+            transform: scale(1.05);
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background:rgba(0,0,0,0.5);
+            border-radius: 10px 10px 0 0;
+        }
+        .email-button {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .email-button:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Scan QR Code for Secure Payment</h1>
+    </header>
+    
+    <nav class="navbar">
+        <li><a href="HOME PAGE.html">Home</a>    </li>
+        <li><a href="About Us.html">About Us</a> </li>
+        <li><a href="homeeeee.html">Holiday Tours</li>
+        <li><a href="trekking.html">Adventures</a></li>
+        <li><a href="booking form.html">Book Now</a></li>
+	    <li><a href="hotels.html">Hotels</a></li>
+        <li><a href="#">Policy</a>
+        <li><a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="content">
+        <div class="qr-container">
+            <img src="UPI.jpg" height="400px" alt="QR Code">
+        </div>
+
+        <br>
+        <button type="button" onclick="location.href='thank you.html'">OK</button>
+    </div>
+
+    <footer class="footer">
+        <div>
+            <p>&copy; 2025 Swastic Tour and Travels | All rights reserved</p>
+            <p>For any query, contact our Toll-Free Number: 1800-154-1230</p>
+        </div>
+        <div>
+            <a href="mailto:ministerchief31@gmail.com" class="email-button">Email Us</a>
+            <a href="https://facebook.com" class="email-button">Facebook</a>
+            <a href="https://instagram.com" class="email-button">Instagram</a>
+            <a href="https://twitter.com" class="email-button">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
